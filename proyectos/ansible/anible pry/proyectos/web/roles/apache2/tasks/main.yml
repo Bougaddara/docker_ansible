@@ -1,0 +1,9 @@
+#- include_tasks: instalar.yml
+#  loop: "{{ listaPaquetes }}"
+
+#- include_tasks: setupComposer.yml
+
+#- include_tasks: setupGit.yml
+#  loop: "{{ listaProyectos }}"
+
+- include_tasks: setupLaravel.yml

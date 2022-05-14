@@ -1,0 +1,9 @@
+<h2> {{ansible_user}} </h2>
+{% if ansible_distribution == "Ubuntu" %}
+    Este sistema es Debianassddsds
+{% endif %}
+
+Lista de usuarios:jhj
+{% for usuario in lista_usuarios %}
+  Acciones para el usuario {{ usuario }}
+{% endfor %}
